@@ -12,53 +12,53 @@ class TestKoorinatarendszer(TestCase):
         y=0
         aktualis = feladatok.koorinatarendszer(x,y)
         elvart = "origo"
-        self.assertEqual(elvart, aktualis, x+","+y+" pont helyét rosszul határozta meg")
+        self.assertEqual(elvart, aktualis, str(x)+","+str(y)+" pont helyét rosszul határozta meg")
     def test_feladat11(self):
         x=1
         y=1
         aktualis = feladatok.koorinatarendszer(x,y)
         elvart = "1. negyed"
-        self.assertEqual(elvart, aktualis, x+","+y+" pont helyét rosszul határozta meg")
+        self.assertEqual(elvart, aktualis, str(x)+","+str(y)+" pont helyét rosszul határozta meg")
     def test_feladatneg11(self):
         x=-1
         y=1
         aktualis = feladatok.koorinatarendszer(x,y)
         elvart = "2. negyed"
-        self.assertEqual(elvart, aktualis, x+","+y+" pont helyét rosszul határozta meg")
+        self.assertEqual(elvart, aktualis, str(x)+","+str(y)+" pont helyét rosszul határozta meg")
     def test_feladatneg1neg1(self):
         x=-1
         y=-1
         aktualis = feladatok.koorinatarendszer(x,y)
         elvart = "3. negyed"
-        self.assertEqual(elvart, aktualis, x+","+y+" pont helyét rosszul határozta meg")
+        self.assertEqual(elvart, aktualis, str(x)+","+str(y)+" pont helyét rosszul határozta meg")
     def test_feladat1neg1(self):
         x=11
         y=-1
         aktualis = feladatok.koorinatarendszer(x,y)
         elvart = "4. negyed"
-        self.assertEqual(elvart, aktualis, x+","+y+" pont helyét rosszul határozta meg")
+        self.assertEqual(elvart, aktualis, str(x)+","+str(y)+" pont helyét rosszul határozta meg")
     def test_feladat5nulla(self):
         x=5
         y=0
         aktualis = feladatok.koorinatarendszer(x,y)
         elvart = "x tengely"
-        self.assertEqual(elvart, aktualis, x+","+y+" pont helyét rosszul határozta meg")
+        self.assertEqual(elvart, aktualis, str(x)+","+str(y)+" pont helyét rosszul határozta meg")
     def test_feladatneg5nulla(self):
         x=-5
         y=0
         aktualis = feladatok.koorinatarendszer(x,y)
         elvart = "x tengely"
-        self.assertEqual(elvart, aktualis, x+","+y+" pont helyét rosszul határozta meg")
+        self.assertEqual(elvart, aktualis, str(x)+","+str(y)+" pont helyét rosszul határozta meg")
     def test_feladatnulla5(self):
         x=0
         y=5
         aktualis = feladatok.koorinatarendszer(x,y)
         elvart = "y tengely"
-        self.assertEqual(elvart, aktualis, x+","+y+" pont helyét rosszul határozta meg")
+        self.assertEqual(elvart, aktualis, str(x)+","+str(y)+" pont helyét rosszul határozta meg")
     def test_feladatnullaneg5(self):
         x=0
         y=-5
         aktualis = feladatok.koorinatarendszer(x,y)
         elvart = "y tengely"
-        self.assertEqual(elvart, aktualis, x+","+y+" pont helyét rosszul határozta meg")
+        self.assertEqual(elvart, aktualis, str(x)+","+str(y)+" pont helyét rosszul határozta meg")
 
